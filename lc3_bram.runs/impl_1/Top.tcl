@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "E:/fpga_test/lc3_bram/lc3_bram.runs/impl_1/Top.tcl"
+  variable script "D:/lc3_bram/lc3_bram.runs/impl_1/Top.tcl"
   variable category "vivado_impl"
 }
 
@@ -121,24 +121,24 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 1
+  set_param chipscope.maxJobs 4
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tfgg484-2
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir E:/fpga_test/lc3_bram/lc3_bram.cache/wt [current_project]
-  set_property parent.project_path E:/fpga_test/lc3_bram/lc3_bram.xpr [current_project]
-  set_property ip_output_repo E:/fpga_test/lc3_bram/lc3_bram.cache/ip [current_project]
+  set_property webtalk.parent_dir D:/lc3_bram/lc3_bram.cache/wt [current_project]
+  set_property parent.project_path D:/lc3_bram/lc3_bram.xpr [current_project]
+  set_property ip_output_repo D:/lc3_bram/lc3_bram.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet E:/fpga_test/lc3_bram/lc3_bram.runs/synth_1/Top.dcp
-  read_ip -quiet e:/fpga_test/lc3_bram/lc3_bram.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
+  add_files -quiet D:/lc3_bram/lc3_bram.runs/synth_1/Top.dcp
+  read_ip -quiet d:/lc3_bram/lc3_bram.srcs/sources_1/ip/dual_mem/dual_mem.xci
 OPTRACE "read constraints: implementation" START { }
-  read_xdc E:/fpga_test/lc3_bram/lc3_bram.srcs/constrs_1/new/lc3.xdc
+  read_xdc D:/lc3_bram/lc3_bram.srcs/constrs_1/new/lc3.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

@@ -1195,84 +1195,84 @@ end // initial
     `endif // SYNTHESIS
   end
 endmodule
-module Memory(
-  input         clock,
-  input  [15:0] io_rIdx,
-  output [15:0] io_rdata,
-  input  [15:0] io_wIdx,
-  input  [15:0] io_wdata,
-  input         io_wen,
-  output        io_R
-);
-`ifdef RANDOMIZE_MEM_INIT
-  reg [31:0] _RAND_0;
-`endif // RANDOMIZE_MEM_INIT
-  reg [15:0] _T [0:65535]; // @[Memory.scala 32:18]
-  wire [15:0] _T__T_1_data; // @[Memory.scala 32:18]
-  wire [15:0] _T__T_1_addr; // @[Memory.scala 32:18]
-  wire [15:0] _T__T_2_data; // @[Memory.scala 32:18]
-  wire [15:0] _T__T_2_addr; // @[Memory.scala 32:18]
-  wire  _T__T_2_mask; // @[Memory.scala 32:18]
-  wire  _T__T_2_en; // @[Memory.scala 32:18]
-  assign _T__T_1_addr = io_rIdx;
-  assign _T__T_1_data = _T[_T__T_1_addr]; // @[Memory.scala 32:18]
-  assign _T__T_2_data = io_wdata;
-  assign _T__T_2_addr = io_wIdx;
-  assign _T__T_2_mask = 1'h1;
-  assign _T__T_2_en = io_wen;
-  assign io_rdata = _T__T_1_data; // @[Memory.scala 33:14]
-  assign io_R = 1'h1; // @[Memory.scala 55:8]
-`ifdef RANDOMIZE_GARBAGE_ASSIGN
-`define RANDOMIZE
-`endif
-`ifdef RANDOMIZE_INVALID_ASSIGN
-`define RANDOMIZE
-`endif
-`ifdef RANDOMIZE_REG_INIT
-`define RANDOMIZE
-`endif
-`ifdef RANDOMIZE_MEM_INIT
-`define RANDOMIZE
-`endif
-`ifndef RANDOM
-`define RANDOM $random
-`endif
-`ifdef RANDOMIZE_MEM_INIT
-  integer initvar;
-`endif
-`ifndef SYNTHESIS
-`ifdef FIRRTL_BEFORE_INITIAL
-`FIRRTL_BEFORE_INITIAL
-`endif
-initial begin
-  `ifdef RANDOMIZE
-    `ifdef INIT_RANDOM
-      `INIT_RANDOM
-    `endif
-    `ifndef VERILATOR
-      `ifdef RANDOMIZE_DELAY
-        #`RANDOMIZE_DELAY begin end
-      `else
-        #0.002 begin end
-      `endif
-    `endif
-`ifdef RANDOMIZE_MEM_INIT
-  _RAND_0 = {1{`RANDOM}};
-  for (initvar = 0; initvar < 65536; initvar = initvar+1)
-    _T[initvar] = _RAND_0[15:0];
-`endif // RANDOMIZE_MEM_INIT
-  `endif // RANDOMIZE
-end // initial
-`ifdef FIRRTL_AFTER_INITIAL
-`FIRRTL_AFTER_INITIAL
-`endif
-`endif // SYNTHESIS
-  always @(posedge clock) begin
-    if(_T__T_2_en & _T__T_2_mask) begin
-      _T[_T__T_2_addr] <= _T__T_2_data; // @[Memory.scala 32:18]
-    end
-  end
-endmodule
+  //module Memory(
+  //  input         clock,
+  //  input  [15:0] io_rIdx,
+  //  output [15:0] io_rdata,
+  //  input  [15:0] io_wIdx,
+  //  input  [15:0] io_wdata,
+  //  input         io_wen,
+  //  output        io_R
+  //);
+  //`ifdef RANDOMIZE_MEM_INIT
+  //  reg [31:0] _RAND_0;
+  //`endif // RANDOMIZE_MEM_INIT
+  //  reg [15:0] _T [0:65535]; // @[Memory.scala 32:18]
+  //  wire [15:0] _T__T_1_data; // @[Memory.scala 32:18]
+  //  wire [15:0] _T__T_1_addr; // @[Memory.scala 32:18]
+  //  wire [15:0] _T__T_2_data; // @[Memory.scala 32:18]
+  //  wire [15:0] _T__T_2_addr; // @[Memory.scala 32:18]
+  //  wire  _T__T_2_mask; // @[Memory.scala 32:18]
+  //  wire  _T__T_2_en; // @[Memory.scala 32:18]
+  //  assign _T__T_1_addr = io_rIdx;
+  //  assign _T__T_1_data = _T[_T__T_1_addr]; // @[Memory.scala 32:18]
+  //  assign _T__T_2_data = io_wdata;
+  //  assign _T__T_2_addr = io_wIdx;
+  //  assign _T__T_2_mask = 1'h1;
+  //  assign _T__T_2_en = io_wen;
+  //  assign io_rdata = _T__T_1_data; // @[Memory.scala 33:14]
+  //  assign io_R = 1'h1; // @[Memory.scala 55:8]
+  //`ifdef RANDOMIZE_GARBAGE_ASSIGN
+  //`define RANDOMIZE
+  //`endif
+  //`ifdef RANDOMIZE_INVALID_ASSIGN
+  //`define RANDOMIZE
+  //`endif
+  //`ifdef RANDOMIZE_REG_INIT
+  //`define RANDOMIZE
+  //`endif
+  //`ifdef RANDOMIZE_MEM_INIT
+  //`define RANDOMIZE
+  //`endif
+  //`ifndef RANDOM
+  //`define RANDOM $random
+  //`endif
+  //`ifdef RANDOMIZE_MEM_INIT
+  //  integer initvar;
+  //`endif
+  //`ifndef SYNTHESIS
+  //`ifdef FIRRTL_BEFORE_INITIAL
+  //`FIRRTL_BEFORE_INITIAL
+  //`endif
+  //initial begin
+  //  `ifdef RANDOMIZE
+  //    `ifdef INIT_RANDOM
+  //      `INIT_RANDOM
+  //    `endif
+  //    `ifndef VERILATOR
+  //      `ifdef RANDOMIZE_DELAY
+  //        #`RANDOMIZE_DELAY begin end
+  //      `else
+  //        #0.002 begin end
+  //      `endif
+  //    `endif
+  //`ifdef RANDOMIZE_MEM_INIT
+  //  _RAND_0 = {1{`RANDOM}};
+  //  for (initvar = 0; initvar < 65536; initvar = initvar+1)
+  //    _T[initvar] = _RAND_0[15:0];
+  //`endif // RANDOMIZE_MEM_INIT
+  //  `endif // RANDOMIZE
+  //end // initial
+  //`ifdef FIRRTL_AFTER_INITIAL
+  //`FIRRTL_AFTER_INITIAL
+  //`endif
+  //`endif // SYNTHESIS
+  //  always @(posedge clock) begin
+  //    if(_T__T_2_en & _T__T_2_mask) begin
+  //      _T[_T__T_2_addr] <= _T__T_2_data; // @[Memory.scala 32:18]
+  //    end
+  //  end
+  //endmodule
 module UartRX(
   input        clock,
   input        reset,
@@ -1853,15 +1853,26 @@ module Top(
     .io_uartTx_valid(dataPath_io_uartTx_valid),
     .io_uartTx_bits(dataPath_io_uartTx_bits)
   );
-  Memory memory ( // @[Top.scala 16:22]
-    .clock(memory_clock),
-    .io_rIdx(memory_io_rIdx),
-    .io_rdata(memory_io_rdata),
-    .io_wIdx(memory_io_wIdx),
-    .io_wdata(memory_io_wdata),
-    .io_wen(memory_io_wen),
-    .io_R(memory_io_R)
+
+  dual_mem memory (
+    .clka(memory_clock),
+    .wea(memory_io_wen),
+    .addra(memory_io_wIdx),
+    .dina(memory_io_wdata),
+    .clkb(memory_clock),
+    .addrb(memory_io_rIdx),
+    .doutb(memory_io_rdata)
   );
+
+  //  Memory memory ( // @[Top.scala 16:22]
+  //    .clock(memory_clock),
+  //    .io_rIdx(memory_io_rIdx),
+  //    .io_rdata(memory_io_rdata),
+  //    .io_wIdx(memory_io_wIdx),
+  //    .io_wdata(memory_io_wdata),
+  //    .io_wen(memory_io_wen),
+  //    .io_R(memory_io_R)
+  //  );
   UartRX UartRX ( // @[Top.scala 19:24]
     .clock(UartRX_clock),
     .reset(UartRX_reset),
