@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="test_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="3104958fs"></ZoomStartTime>
+      <ZoomEndTime time="4119959fs"></ZoomEndTime>
+      <Cursor1Time time="1667958fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="404"></NameColumnWidth>
+      <ValueColumnWidth column_width="94"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="53" />
+   <wvobject fp_name="/test/sys_clk" type="logic">
+      <obj_property name="ElementShortName">sys_clk</obj_property>
+      <obj_property name="ObjectShortName">sys_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/sys_rst_n" type="logic">
+      <obj_property name="ElementShortName">sys_rst_n</obj_property>
+      <obj_property name="ObjectShortName">sys_rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/txd" type="logic">
+      <obj_property name="ElementShortName">txd</obj_property>
+      <obj_property name="ObjectShortName">txd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/controller/ctrlSigRom/io_sel" type="array">
+      <obj_property name="ElementShortName">io_sel[5:0]</obj_property>
+      <obj_property name="ObjectShortName">io_sel[5:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/PC" type="array">
+      <obj_property name="ElementShortName">PC[15:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/IR" type="array">
+      <obj_property name="ElementShortName">IR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">IR[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/memory/io_rIdx" type="array">
+      <obj_property name="ElementShortName">io_rIdx[15:0]</obj_property>
+      <obj_property name="ObjectShortName">io_rIdx[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/memory/io_rdata" type="array">
+      <obj_property name="ElementShortName">io_rdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">io_rdata[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/memory/io_wIdx" type="array">
+      <obj_property name="ElementShortName">io_wIdx[15:0]</obj_property>
+      <obj_property name="ObjectShortName">io_wIdx[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/memory/io_wdata" type="array">
+      <obj_property name="ElementShortName">io_wdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">io_wdata[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/memory/io_wen" type="logic">
+      <obj_property name="ElementShortName">io_wen</obj_property>
+      <obj_property name="ObjectShortName">io_wen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/MAR" type="array">
+      <obj_property name="ElementShortName">MAR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">MAR[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/MDR" type="array">
+      <obj_property name="ElementShortName">MDR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">MDR[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/memory/dual_mem/wea" type="array">
+      <obj_property name="ElementShortName">wea[0:0]</obj_property>
+      <obj_property name="ObjectShortName">wea[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/memory/dual_mem/addra" type="array">
+      <obj_property name="ElementShortName">addra[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/memory/dual_mem/dina" type="array">
+      <obj_property name="ElementShortName">dina[15:0]</obj_property>
+      <obj_property name="ObjectShortName">dina[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/memory/dual_mem/addrb" type="array">
+      <obj_property name="ElementShortName">addrb[15:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/memory/dual_mem/doutb" type="array">
+      <obj_property name="ElementShortName">doutb[15:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/MAR" type="array">
+      <obj_property name="ElementShortName">MAR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">MAR[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/MDR" type="array">
+      <obj_property name="ElementShortName">MDR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">MDR[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/KBDR" type="array">
+      <obj_property name="ElementShortName">KBDR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">KBDR[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/KBSR" type="array">
+      <obj_property name="ElementShortName">KBSR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">KBSR[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/DDR" type="array">
+      <obj_property name="ElementShortName">DDR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DDR[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/DSR" type="array">
+      <obj_property name="ElementShortName">DSR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DSR[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath_io_signal_LD_IR" type="logic">
+      <obj_property name="ElementShortName">dataPath_io_signal_LD_IR</obj_property>
+      <obj_property name="ObjectShortName">dataPath_io_signal_LD_IR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath_io_signal_MIO_EN" type="logic">
+      <obj_property name="ElementShortName">dataPath_io_signal_MIO_EN</obj_property>
+      <obj_property name="ObjectShortName">dataPath_io_signal_MIO_EN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/regfile/io_wen" type="logic">
+      <obj_property name="ElementShortName">io_wen</obj_property>
+      <obj_property name="ObjectShortName">io_wen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/LD_DDR" type="logic">
+      <obj_property name="ElementShortName">LD_DDR</obj_property>
+      <obj_property name="ObjectShortName">LD_DDR</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/regfile/io_wAddr" type="array">
+      <obj_property name="ElementShortName">io_wAddr[2:0]</obj_property>
+      <obj_property name="ObjectShortName">io_wAddr[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/regfile/io_r1Addr" type="array">
+      <obj_property name="ElementShortName">io_r1Addr[2:0]</obj_property>
+      <obj_property name="ObjectShortName">io_r1Addr[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/regfile/io_r2Addr" type="array">
+      <obj_property name="ElementShortName">io_r2Addr[2:0]</obj_property>
+      <obj_property name="ObjectShortName">io_r2Addr[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/regfile/io_wData" type="array">
+      <obj_property name="ElementShortName">io_wData[15:0]</obj_property>
+      <obj_property name="ObjectShortName">io_wData[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/regfile/io_r1Data" type="array">
+      <obj_property name="ElementShortName">io_r1Data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">io_r1Data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/regfile/io_r2Data" type="array">
+      <obj_property name="ElementShortName">io_r2Data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">io_r2Data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/BUSOUT" type="array">
+      <obj_property name="ElementShortName">BUSOUT[15:0]</obj_property>
+      <obj_property name="ObjectShortName">BUSOUT[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/BufferedUartTX/io_txd" type="logic">
+      <obj_property name="ElementShortName">io_txd</obj_property>
+      <obj_property name="ObjectShortName">io_txd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/UartRX/io_rxd" type="logic">
+      <obj_property name="ElementShortName">io_rxd</obj_property>
+      <obj_property name="ObjectShortName">io_rxd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/regfile/regfile_0" type="array">
+      <obj_property name="ElementShortName">regfile_0[15:0]</obj_property>
+      <obj_property name="ObjectShortName">regfile_0[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/regfile/regfile_1" type="array">
+      <obj_property name="ElementShortName">regfile_1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">regfile_1[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/regfile/regfile_2" type="array">
+      <obj_property name="ElementShortName">regfile_2[15:0]</obj_property>
+      <obj_property name="ObjectShortName">regfile_2[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/regfile/regfile_3" type="array">
+      <obj_property name="ElementShortName">regfile_3[15:0]</obj_property>
+      <obj_property name="ObjectShortName">regfile_3[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/regfile/regfile_4" type="array">
+      <obj_property name="ElementShortName">regfile_4[15:0]</obj_property>
+      <obj_property name="ObjectShortName">regfile_4[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/regfile/regfile_5" type="array">
+      <obj_property name="ElementShortName">regfile_5[15:0]</obj_property>
+      <obj_property name="ObjectShortName">regfile_5[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/regfile/regfile_6" type="array">
+      <obj_property name="ElementShortName">regfile_6[15:0]</obj_property>
+      <obj_property name="ObjectShortName">regfile_6[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/regfile/regfile_7" type="array">
+      <obj_property name="ElementShortName">regfile_7[15:0]</obj_property>
+      <obj_property name="ObjectShortName">regfile_7[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/io_uartTx_ready" type="logic">
+      <obj_property name="ElementShortName">io_uartTx_ready</obj_property>
+      <obj_property name="ObjectShortName">io_uartTx_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/DSR" type="array">
+      <obj_property name="ElementShortName">DSR[15:0]</obj_property>
+      <obj_property name="ObjectShortName">DSR[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/in_mux" type="array">
+      <obj_property name="ElementShortName">in_mux[15:0]</obj_property>
+      <obj_property name="ObjectShortName">in_mux[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/txd" type="logic">
+      <obj_property name="ElementShortName">txd</obj_property>
+      <obj_property name="ObjectShortName">txd</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/dataPath/io_uartTx_valid" type="logic">
+      <obj_property name="ElementShortName">io_uartTx_valid</obj_property>
+      <obj_property name="ObjectShortName">io_uartTx_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/BufferedUartTX/io_channel_ready" type="logic">
+      <obj_property name="ElementShortName">io_channel_ready</obj_property>
+      <obj_property name="ObjectShortName">io_channel_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/BufferedUartTX/io_channel_valid" type="logic">
+      <obj_property name="ElementShortName">io_channel_valid</obj_property>
+      <obj_property name="ObjectShortName">io_channel_valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="/test/top/BufferedUartTX/io_channel_bits" type="array">
+      <obj_property name="ElementShortName">io_channel_bits[7:0]</obj_property>
+      <obj_property name="ObjectShortName">io_channel_bits[7:0]</obj_property>
+      <obj_property name="Radix">ASCIIRADIX</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Fri Jan 22 14:45:38 2021
+// Date        : Sun Jan 24 18:29:12 2021
 // Host        : DESKTOP-JR running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim d:/lc3_bram/lc3_bram.srcs/sources_1/ip/dual_mem/dual_mem_sim_netlist.v
 // Design      : dual_mem
@@ -99,9 +99,9 @@ module dual_mem
   (* C_INITA_VAL = "0" *) 
   (* C_INITB_VAL = "0" *) 
   (* C_INIT_FILE = "dual_mem.mem" *) 
-  (* C_INIT_FILE_NAME = "no_coe_file_loaded" *) 
+  (* C_INIT_FILE_NAME = "dual_mem.mif" *) 
   (* C_INTERFACE_TYPE = "0" *) 
-  (* C_LOAD_INIT_FILE = "0" *) 
+  (* C_LOAD_INIT_FILE = "1" *) 
   (* C_MEM_TYPE = "1" *) 
   (* C_MUX_PIPELINE_STAGES = "0" *) 
   (* C_PRIM_TYPE = "1" *) 
@@ -1535,7 +1535,7 @@ module dual_mem_blk_mem_gen_prim_width
   wire [0:0]ena_array;
   wire [8:0]ram_doutb;
 
-  dual_mem_blk_mem_gen_prim_wrapper \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init \prim_init.ram 
        (.addra(addra),
         .addrb(addrb),
         .clka(clka),
@@ -1572,7 +1572,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized0
   wire [0:0]ena_array;
   wire [0:0]enb_array;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized0 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized0 \prim_init.ram 
        (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram ),
         .\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ),
         .addra(addra),
@@ -1611,7 +1611,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized1
   wire [0:0]ena_array;
   wire [0:0]enb_array;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized1 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized1 \prim_init.ram 
        (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram ),
         .\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ),
         .addra(addra),
@@ -1650,7 +1650,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized10
   wire [0:0]ena_array;
   wire [0:0]enb_array;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized10 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized10 \prim_init.ram 
        (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram ),
         .\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ),
         .addra(addra),
@@ -1689,7 +1689,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized11
   wire [0:0]ena_array;
   wire [0:0]enb_array;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized11 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized11 \prim_init.ram 
        (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram ),
         .\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ),
         .addra(addra),
@@ -1728,7 +1728,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized12
   wire [0:0]ena_array;
   wire [0:0]enb_array;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized12 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized12 \prim_init.ram 
        (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram ),
         .\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ),
         .addra(addra),
@@ -1767,7 +1767,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized13
   wire [0:0]ena_array;
   wire [0:0]enb_array;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized13 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized13 \prim_init.ram 
        (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram ),
         .\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ),
         .addra(addra),
@@ -1803,7 +1803,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized14
   wire [8:0]dina;
   wire [0:0]ena_array;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized14 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized14 \prim_init.ram 
        (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram ),
         .\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ),
         .addra(addra),
@@ -1835,7 +1835,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized15
   wire [0:0]doutb;
   wire [0:0]wea;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized15 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized15 \prim_init.ram 
        (.addra(addra),
         .addrb(addrb),
         .clka(clka),
@@ -1866,7 +1866,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized16
   wire [0:0]doutb;
   wire [0:0]wea;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized16 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized16 \prim_init.ram 
        (.addra(addra),
         .addrb(addrb),
         .clka(clka),
@@ -1897,7 +1897,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized17
   wire [0:0]doutb;
   wire [0:0]wea;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized17 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized17 \prim_init.ram 
        (.addra(addra),
         .addrb(addrb),
         .clka(clka),
@@ -1928,7 +1928,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized18
   wire [0:0]doutb;
   wire [0:0]wea;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized18 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized18 \prim_init.ram 
        (.addra(addra),
         .addrb(addrb),
         .clka(clka),
@@ -1959,7 +1959,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized19
   wire [0:0]doutb;
   wire [0:0]wea;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized19 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized19 \prim_init.ram 
        (.addra(addra),
         .addrb(addrb),
         .clka(clka),
@@ -1993,7 +1993,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized2
   wire [8:0]dina;
   wire [0:0]wea;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized2 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized2 \prim_init.ram 
        (.DOBDO(DOBDO),
         .DOPBDOP(DOPBDOP),
         .addra(addra),
@@ -2025,7 +2025,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized20
   wire [0:0]doutb;
   wire [0:0]wea;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized20 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized20 \prim_init.ram 
        (.addra(addra),
         .addrb(addrb),
         .clka(clka),
@@ -2056,7 +2056,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized21
   wire [0:0]doutb;
   wire [0:0]wea;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized21 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized21 \prim_init.ram 
        (.addra(addra),
         .addrb(addrb),
         .clka(clka),
@@ -2090,7 +2090,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized3
   wire [8:0]dina;
   wire [0:0]ena_array;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized3 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized3 \prim_init.ram 
        (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram ),
         .\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ),
         .addra(addra),
@@ -2128,7 +2128,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized4
   wire [0:0]enb_array;
   wire [0:0]wea;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized4 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized4 \prim_init.ram 
        (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram ),
         .\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ),
         .addra(addra),
@@ -2167,7 +2167,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized5
   wire [0:0]ena_array;
   wire [0:0]enb_array;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized5 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized5 \prim_init.ram 
        (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram ),
         .\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ),
         .addra(addra),
@@ -2206,7 +2206,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized6
   wire [0:0]enb_array;
   wire [0:0]wea;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized6 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized6 \prim_init.ram 
        (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram ),
         .\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ),
         .addra(addra),
@@ -2245,7 +2245,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized7
   wire [0:0]ena_array;
   wire [0:0]enb_array;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized7 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized7 \prim_init.ram 
        (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram ),
         .\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ),
         .addra(addra),
@@ -2281,7 +2281,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized8
   wire [8:0]dina;
   wire [0:0]ena_array;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized8 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized8 \prim_init.ram 
        (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram ),
         .\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ),
         .addra(addra),
@@ -2319,7 +2319,7 @@ module dual_mem_blk_mem_gen_prim_width__parameterized9
   wire [0:0]ena_array;
   wire [0:0]enb_array;
 
-  dual_mem_blk_mem_gen_prim_wrapper__parameterized9 \prim_noinit.ram 
+  dual_mem_blk_mem_gen_prim_wrapper_init__parameterized9 \prim_init.ram 
        (.\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram ),
         .\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ),
         .addra(addra),
@@ -2330,8 +2330,8 @@ module dual_mem_blk_mem_gen_prim_width__parameterized9
         .enb_array(enb_array));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init
    (ram_doutb,
     clka,
     ena_array,
@@ -2373,7 +2373,7 @@ module dual_mem_blk_mem_gen_prim_wrapper
     .INITP_01(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INITP_02(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INITP_03(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INITP_04(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INITP_04(256'h0000000000000000000000000000000000000000848000000024000000000084),
     .INITP_05(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INITP_06(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INITP_07(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -2386,7 +2386,7 @@ module dual_mem_blk_mem_gen_prim_wrapper
     .INITP_0E(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INITP_0F(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_00(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_01(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_01(256'h0000000000000000000000000000000000000000000000000000000000503000),
     .INIT_02(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_03(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_04(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -2417,10 +2417,10 @@ module dual_mem_blk_mem_gen_prim_wrapper
     .INIT_1D(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_1E(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_1F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_20(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_21(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_22(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_23(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_20(256'h000000000000000000000000000000000000000000000200C003026005FE0609),
+    .INIT_21(256'h00000000000000000604C00303FE040700000000000000000000000000000000),
+    .INIT_22(256'hC006040608F92108FE0905001010101400000000000000000000000000000000),
+    .INIT_23(256'h0000000000000000000000000000000000000000000000000000000000000604),
     .INIT_24(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_25(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_26(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -2583,8 +2583,8 @@ module dual_mem_blk_mem_gen_prim_wrapper
         .O(\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__5_n_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized0
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized0
    (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ,
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 ,
     clka,
@@ -2833,8 +2833,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized0
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized1
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized1
    (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ,
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 ,
     clka,
@@ -3083,8 +3083,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized1
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized10
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized10
    (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ,
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 ,
     clka,
@@ -3333,8 +3333,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized10
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized11
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized11
    (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ,
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 ,
     clka,
@@ -3583,8 +3583,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized11
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized12
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized12
    (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ,
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 ,
     clka,
@@ -3833,8 +3833,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized12
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized13
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized13
    (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ,
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 ,
     clka,
@@ -4083,8 +4083,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized13
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized14
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized14
    (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ,
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 ,
     clka,
@@ -4339,8 +4339,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized14
         .O(enb_array));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized15
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized15
    (doutb,
     clka,
     wea,
@@ -4354,10 +4354,10 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized15
   input [15:0]addrb;
   input [0:0]dina;
 
+  wire CASCADEINA;
+  wire CASCADEINB;
   wire [15:0]addra;
   wire [15:0]addrb;
-  wire cascadelata_tmp;
-  wire cascadelatb_tmp;
   wire clka;
   wire [0:0]dina;
   wire [0:0]doutb;
@@ -4407,7 +4407,7 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized15
     .INIT_01(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_02(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_03(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_04(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_04(256'h00000000000000000000000000000000000000035DDD000000D7000000000377),
     .INIT_05(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_06(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_07(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -4451,7 +4451,7 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized15
     .INIT_2D(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_2E(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_2F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_30(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_30(256'h0000000000000000000000000000000000000000000000000000000000000004),
     .INIT_31(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_32(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_33(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -4563,8 +4563,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized15
         .ADDRBWRADDR(addrb),
         .CASCADEINA(1'b0),
         .CASCADEINB(1'b0),
-        .CASCADEOUTA(cascadelata_tmp),
-        .CASCADEOUTB(cascadelatb_tmp),
+        .CASCADEOUTA(CASCADEINA),
+        .CASCADEOUTB(CASCADEINB),
         .CLKARDCLK(clka),
         .CLKBWRCLK(clka),
         .DBITERR(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_DBITERR_UNCONNECTED ),
@@ -4771,8 +4771,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized15
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T 
        (.ADDRARDADDR(addra),
         .ADDRBWRADDR(addrb),
-        .CASCADEINA(cascadelata_tmp),
-        .CASCADEINB(cascadelatb_tmp),
+        .CASCADEINA(CASCADEINA),
+        .CASCADEINB(CASCADEINB),
         .CASCADEOUTA(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_CASCADEOUTA_UNCONNECTED ),
         .CASCADEOUTB(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_CASCADEOUTB_UNCONNECTED ),
         .CLKARDCLK(clka),
@@ -4803,8 +4803,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized15
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized16
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized16
    (doutb,
     clka,
     wea,
@@ -4818,10 +4818,10 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized16
   input [15:0]addrb;
   input [0:0]dina;
 
+  wire CASCADEINA;
+  wire CASCADEINB;
   wire [15:0]addra;
   wire [15:0]addrb;
-  wire cascadelata_tmp;
-  wire cascadelatb_tmp;
   wire clka;
   wire [0:0]dina;
   wire [0:0]doutb;
@@ -4867,11 +4867,11 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized16
     .INITP_0D(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INITP_0E(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INITP_0F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_00(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_00(256'h0000000000000000000000000000000000000000000000000000000700000000),
     .INIT_01(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_02(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_03(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_04(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_04(256'h00000000000000000000000000000000000000034CE9000000C4000000000304),
     .INIT_05(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_06(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_07(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -4915,7 +4915,7 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized16
     .INIT_2D(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_2E(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_2F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_30(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_30(256'h0000000000000000000000000000000000000000000000000000000000000004),
     .INIT_31(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_32(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_33(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -5027,8 +5027,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized16
         .ADDRBWRADDR(addrb),
         .CASCADEINA(1'b0),
         .CASCADEINB(1'b0),
-        .CASCADEOUTA(cascadelata_tmp),
-        .CASCADEOUTB(cascadelatb_tmp),
+        .CASCADEOUTA(CASCADEINA),
+        .CASCADEOUTB(CASCADEINB),
         .CLKARDCLK(clka),
         .CLKBWRCLK(clka),
         .DBITERR(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_DBITERR_UNCONNECTED ),
@@ -5235,8 +5235,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized16
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T 
        (.ADDRARDADDR(addra),
         .ADDRBWRADDR(addrb),
-        .CASCADEINA(cascadelata_tmp),
-        .CASCADEINB(cascadelatb_tmp),
+        .CASCADEINA(CASCADEINA),
+        .CASCADEINB(CASCADEINB),
         .CASCADEOUTA(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_CASCADEOUTA_UNCONNECTED ),
         .CASCADEOUTB(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_CASCADEOUTB_UNCONNECTED ),
         .CLKARDCLK(clka),
@@ -5267,8 +5267,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized16
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized17
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized17
    (doutb,
     clka,
     wea,
@@ -5282,10 +5282,10 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized17
   input [15:0]addrb;
   input [0:0]dina;
 
+  wire CASCADEINA;
+  wire CASCADEINB;
   wire [15:0]addra;
   wire [15:0]addrb;
-  wire cascadelata_tmp;
-  wire cascadelatb_tmp;
   wire clka;
   wire [0:0]dina;
   wire [0:0]doutb;
@@ -5335,7 +5335,7 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized17
     .INIT_01(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_02(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_03(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_04(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_04(256'h00000000000000000000000000000000000000034401000000C0000000000300),
     .INIT_05(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_06(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_07(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -5379,7 +5379,7 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized17
     .INIT_2D(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_2E(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_2F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_30(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_30(256'h0000000000000000000000000000000000000000000000000000000000000004),
     .INIT_31(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_32(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_33(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -5491,8 +5491,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized17
         .ADDRBWRADDR(addrb),
         .CASCADEINA(1'b0),
         .CASCADEINB(1'b0),
-        .CASCADEOUTA(cascadelata_tmp),
-        .CASCADEOUTB(cascadelatb_tmp),
+        .CASCADEOUTA(CASCADEINA),
+        .CASCADEOUTB(CASCADEINB),
         .CLKARDCLK(clka),
         .CLKBWRCLK(clka),
         .DBITERR(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_DBITERR_UNCONNECTED ),
@@ -5699,8 +5699,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized17
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T 
        (.ADDRARDADDR(addra),
         .ADDRBWRADDR(addrb),
-        .CASCADEINA(cascadelata_tmp),
-        .CASCADEINB(cascadelatb_tmp),
+        .CASCADEINA(CASCADEINA),
+        .CASCADEINB(CASCADEINB),
         .CASCADEOUTA(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_CASCADEOUTA_UNCONNECTED ),
         .CASCADEOUTB(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_CASCADEOUTB_UNCONNECTED ),
         .CLKARDCLK(clka),
@@ -5731,8 +5731,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized17
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized18
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized18
    (doutb,
     clka,
     wea,
@@ -5746,10 +5746,10 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized18
   input [15:0]addrb;
   input [0:0]dina;
 
+  wire CASCADEINA;
+  wire CASCADEINB;
   wire [15:0]addra;
   wire [15:0]addrb;
-  wire cascadelata_tmp;
-  wire cascadelatb_tmp;
   wire clka;
   wire [0:0]dina;
   wire [0:0]doutb;
@@ -5799,7 +5799,7 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized18
     .INIT_01(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_02(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_03(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_04(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_04(256'h0000000000000000000000000000000000000003030F000000C9000000000331),
     .INIT_05(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_06(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_07(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -5843,7 +5843,7 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized18
     .INIT_2D(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_2E(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_2F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_30(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_30(256'h0000000000000000000000000000000000000000000000000000000000000003),
     .INIT_31(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_32(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_33(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -5955,8 +5955,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized18
         .ADDRBWRADDR(addrb),
         .CASCADEINA(1'b0),
         .CASCADEINB(1'b0),
-        .CASCADEOUTA(cascadelata_tmp),
-        .CASCADEOUTB(cascadelatb_tmp),
+        .CASCADEOUTA(CASCADEINA),
+        .CASCADEOUTB(CASCADEINB),
         .CLKARDCLK(clka),
         .CLKBWRCLK(clka),
         .DBITERR(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_DBITERR_UNCONNECTED ),
@@ -6163,8 +6163,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized18
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T 
        (.ADDRARDADDR(addra),
         .ADDRBWRADDR(addrb),
-        .CASCADEINA(cascadelata_tmp),
-        .CASCADEINB(cascadelatb_tmp),
+        .CASCADEINA(CASCADEINA),
+        .CASCADEINB(CASCADEINB),
         .CASCADEOUTA(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_CASCADEOUTA_UNCONNECTED ),
         .CASCADEOUTB(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_CASCADEOUTB_UNCONNECTED ),
         .CLKARDCLK(clka),
@@ -6195,8 +6195,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized18
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized19
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized19
    (doutb,
     clka,
     wea,
@@ -6210,10 +6210,10 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized19
   input [15:0]addrb;
   input [0:0]dina;
 
+  wire CASCADEINA;
+  wire CASCADEINB;
   wire [15:0]addra;
   wire [15:0]addrb;
-  wire cascadelata_tmp;
-  wire cascadelatb_tmp;
   wire clka;
   wire [0:0]dina;
   wire [0:0]doutb;
@@ -6263,7 +6263,7 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized19
     .INIT_01(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_02(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_03(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_04(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_04(256'h0000000000000000000000000000000000000003795F000000DB00000000036B),
     .INIT_05(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_06(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_07(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -6307,7 +6307,7 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized19
     .INIT_2D(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_2E(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_2F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_30(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_30(256'h0000000000000000000000000000000000000000000000000000000000000003),
     .INIT_31(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_32(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_33(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -6419,8 +6419,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized19
         .ADDRBWRADDR(addrb),
         .CASCADEINA(1'b0),
         .CASCADEINB(1'b0),
-        .CASCADEOUTA(cascadelata_tmp),
-        .CASCADEOUTB(cascadelatb_tmp),
+        .CASCADEOUTA(CASCADEINA),
+        .CASCADEOUTB(CASCADEINB),
         .CLKARDCLK(clka),
         .CLKBWRCLK(clka),
         .DBITERR(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_DBITERR_UNCONNECTED ),
@@ -6627,8 +6627,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized19
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T 
        (.ADDRARDADDR(addra),
         .ADDRBWRADDR(addrb),
-        .CASCADEINA(cascadelata_tmp),
-        .CASCADEINB(cascadelatb_tmp),
+        .CASCADEINA(CASCADEINA),
+        .CASCADEINB(CASCADEINB),
         .CASCADEOUTA(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_CASCADEOUTA_UNCONNECTED ),
         .CASCADEOUTB(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_CASCADEOUTB_UNCONNECTED ),
         .CLKARDCLK(clka),
@@ -6659,8 +6659,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized19
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized2
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized2
    (DOBDO,
     DOPBDOP,
     clka,
@@ -6702,7 +6702,7 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized2
     .DOB_REG(0),
     .EN_ECC_READ("FALSE"),
     .EN_ECC_WRITE("FALSE"),
-    .INITP_00(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INITP_00(256'h0000000000000000000000000000000000000000000000000000000000000004),
     .INITP_01(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INITP_02(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INITP_03(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -6718,7 +6718,7 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized2
     .INITP_0D(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INITP_0E(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INITP_0F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_00(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_00(256'h0000000000000000000000000000000000000000000000000000000000FD2120),
     .INIT_01(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_02(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_03(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -6925,8 +6925,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized2
         .O(enb_array));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized20
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized20
    (doutb,
     clka,
     wea,
@@ -6940,10 +6940,10 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized20
   input [15:0]addrb;
   input [0:0]dina;
 
+  wire CASCADEINA;
+  wire CASCADEINB;
   wire [15:0]addra;
   wire [15:0]addrb;
-  wire cascadelata_tmp;
-  wire cascadelatb_tmp;
   wire clka;
   wire [0:0]dina;
   wire [0:0]doutb;
@@ -6993,7 +6993,7 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized20
     .INIT_01(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_02(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_03(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_04(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_04(256'h00000000000000000000000000000000000000038010000000E0000000000390),
     .INIT_05(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_06(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_07(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -7037,7 +7037,7 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized20
     .INIT_2D(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_2E(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_2F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_30(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_30(256'h0000000000000000000000000000000000000000000000000000000000000003),
     .INIT_31(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_32(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_33(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -7149,8 +7149,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized20
         .ADDRBWRADDR(addrb),
         .CASCADEINA(1'b0),
         .CASCADEINB(1'b0),
-        .CASCADEOUTA(cascadelata_tmp),
-        .CASCADEOUTB(cascadelatb_tmp),
+        .CASCADEOUTA(CASCADEINA),
+        .CASCADEOUTB(CASCADEINB),
         .CLKARDCLK(clka),
         .CLKBWRCLK(clka),
         .DBITERR(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_DBITERR_UNCONNECTED ),
@@ -7357,8 +7357,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized20
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T 
        (.ADDRARDADDR(addra),
         .ADDRBWRADDR(addrb),
-        .CASCADEINA(cascadelata_tmp),
-        .CASCADEINB(cascadelatb_tmp),
+        .CASCADEINA(CASCADEINA),
+        .CASCADEINB(CASCADEINB),
         .CASCADEOUTA(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_CASCADEOUTA_UNCONNECTED ),
         .CASCADEOUTB(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_CASCADEOUTB_UNCONNECTED ),
         .CLKARDCLK(clka),
@@ -7389,8 +7389,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized20
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized21
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized21
    (doutb,
     clka,
     wea,
@@ -7404,10 +7404,10 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized21
   input [15:0]addrb;
   input [0:0]dina;
 
+  wire CASCADEINA;
+  wire CASCADEINB;
   wire [15:0]addra;
   wire [15:0]addrb;
-  wire cascadelata_tmp;
-  wire cascadelatb_tmp;
   wire clka;
   wire [0:0]dina;
   wire [0:0]doutb;
@@ -7457,7 +7457,7 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized21
     .INIT_01(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_02(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_03(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_04(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_04(256'h00000000000000000000000000000000000000038140000000EA0000000003AA),
     .INIT_05(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_06(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_07(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -7501,7 +7501,7 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized21
     .INIT_2D(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_2E(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_2F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_30(256'h0000000000000000000000000000000000000000000000000000000000000000),
+    .INIT_30(256'h0000000000000000000000000000000000000000000000000000000000000003),
     .INIT_31(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_32(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_33(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -7613,8 +7613,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized21
         .ADDRBWRADDR(addrb),
         .CASCADEINA(1'b0),
         .CASCADEINB(1'b0),
-        .CASCADEOUTA(cascadelata_tmp),
-        .CASCADEOUTB(cascadelatb_tmp),
+        .CASCADEOUTA(CASCADEINA),
+        .CASCADEOUTB(CASCADEINB),
         .CLKARDCLK(clka),
         .CLKBWRCLK(clka),
         .DBITERR(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_B_DBITERR_UNCONNECTED ),
@@ -7821,8 +7821,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized21
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T 
        (.ADDRARDADDR(addra),
         .ADDRBWRADDR(addrb),
-        .CASCADEINA(cascadelata_tmp),
-        .CASCADEINB(cascadelatb_tmp),
+        .CASCADEINA(CASCADEINA),
+        .CASCADEINB(CASCADEINB),
         .CASCADEOUTA(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_CASCADEOUTA_UNCONNECTED ),
         .CASCADEOUTB(\NLW_DEVICE_7SERIES.NO_BMM_INFO.SDP.CASCADED_PRIM36.ram_T_CASCADEOUTB_UNCONNECTED ),
         .CLKARDCLK(clka),
@@ -7853,8 +7853,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized21
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized3
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized3
    (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ,
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 ,
     clka,
@@ -8109,8 +8109,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized3
         .O(\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__4_n_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized4
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized4
    (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ,
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 ,
     clka,
@@ -8369,8 +8369,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized4
         .O(ena_array));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized5
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized5
    (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ,
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 ,
     clka,
@@ -8619,8 +8619,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized5
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized6
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized6
    (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ,
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 ,
     clka,
@@ -8879,8 +8879,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized6
         .O(\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_i_1__3_n_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized7
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized7
    (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ,
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 ,
     clka,
@@ -9129,8 +9129,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized7
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized8
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized8
    (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ,
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 ,
     clka,
@@ -9385,8 +9385,8 @@ module dual_mem_blk_mem_gen_prim_wrapper__parameterized8
         .O(enb_array));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper" *) 
-module dual_mem_blk_mem_gen_prim_wrapper__parameterized9
+(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
+module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized9
    (\DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_0 ,
     \DEVICE_7SERIES.NO_BMM_INFO.SDP.SIMPLE_PRIM36.ram_1 ,
     clka,
@@ -9680,7 +9680,7 @@ endmodule
 (* C_HAS_REGCEA = "0" *) (* C_HAS_REGCEB = "0" *) (* C_HAS_RSTA = "0" *) 
 (* C_HAS_RSTB = "0" *) (* C_HAS_SOFTECC_INPUT_REGS_A = "0" *) (* C_HAS_SOFTECC_OUTPUT_REGS_B = "0" *) 
 (* C_INITA_VAL = "0" *) (* C_INITB_VAL = "0" *) (* C_INIT_FILE = "dual_mem.mem" *) 
-(* C_INIT_FILE_NAME = "no_coe_file_loaded" *) (* C_INTERFACE_TYPE = "0" *) (* C_LOAD_INIT_FILE = "0" *) 
+(* C_INIT_FILE_NAME = "dual_mem.mif" *) (* C_INTERFACE_TYPE = "0" *) (* C_LOAD_INIT_FILE = "1" *) 
 (* C_MEM_TYPE = "1" *) (* C_MUX_PIPELINE_STAGES = "0" *) (* C_PRIM_TYPE = "1" *) 
 (* C_READ_DEPTH_A = "65535" *) (* C_READ_DEPTH_B = "65535" *) (* C_READ_LATENCY_A = "1" *) 
 (* C_READ_LATENCY_B = "1" *) (* C_READ_WIDTH_A = "16" *) (* C_READ_WIDTH_B = "16" *) 

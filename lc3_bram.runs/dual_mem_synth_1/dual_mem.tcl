@@ -70,6 +70,8 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "dual_mem_synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 4
+set_param xicom.use_bs_reader 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -88,7 +90,7 @@ set_property ip_output_repo d:/lc3_bram/lc3_bram.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet d:/lc3_bram/lc3_bram.srcs/sources_1/ip/dual_mem/dual_mem.xci
+read_ip -quiet D:/lc3_bram/lc3_bram.srcs/sources_1/ip/dual_mem/dual_mem.xci
 set_property used_in_implementation false [get_files -all d:/lc3_bram/lc3_bram.srcs/sources_1/ip/dual_mem/dual_mem_ooc.xdc]
 
 OPTRACE "Adding files" END { }

@@ -122,6 +122,7 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 4
+  set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a35tfgg484-2
   set_property design_mode GateLvl [current_fileset]
@@ -136,7 +137,7 @@ OPTRACE "set parameters" START { }
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
   add_files -quiet D:/lc3_bram/lc3_bram.runs/synth_1/Top.dcp
-  read_ip -quiet d:/lc3_bram/lc3_bram.srcs/sources_1/ip/dual_mem/dual_mem.xci
+  read_ip -quiet D:/lc3_bram/lc3_bram.srcs/sources_1/ip/dual_mem/dual_mem.xci
 OPTRACE "read constraints: implementation" START { }
   read_xdc D:/lc3_bram/lc3_bram.srcs/constrs_1/new/lc3.xdc
 OPTRACE "read constraints: implementation" END { }
@@ -295,4 +296,35 @@ if {$rc} {
 
 OPTRACE "route_design misc" END { }
 OPTRACE "Phase: Route Design" END { }
+OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
+OPTRACE "write_bitstream setup" START { }
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+OPTRACE "read constraints: write_bitstream" START { }
+OPTRACE "read constraints: write_bitstream" END { }
+  set_property XPM_LIBRARIES XPM_MEMORY [current_project]
+  catch { write_mem_info -force Top.mmi }
+OPTRACE "write_bitstream setup" END { }
+OPTRACE "write_bitstream" START { }
+  write_bitstream -force Top.bit 
+OPTRACE "write_bitstream" END { }
+OPTRACE "write_bitstream misc" START { }
+OPTRACE "read constraints: write_bitstream_post" START { }
+OPTRACE "read constraints: write_bitstream_post" END { }
+  catch {write_debug_probes -quiet -force Top}
+  catch {file copy -force Top.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
+  unset ACTIVE_STEP 
+}
+
+OPTRACE "write_bitstream misc" END { }
+OPTRACE "Phase: Write Bitstream" END { }
 OPTRACE "Implementation" END { }

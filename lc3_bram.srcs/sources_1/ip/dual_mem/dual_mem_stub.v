@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Fri Jan 22 14:45:38 2021
+// Date        : Sun Jan 24 18:29:12 2021
 // Host        : DESKTOP-JR running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub d:/lc3_bram/lc3_bram.srcs/sources_1/ip/dual_mem/dual_mem_stub.v
 // Design      : dual_mem
