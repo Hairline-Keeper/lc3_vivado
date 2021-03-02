@@ -1,9 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Sun Jan 24 18:29:12 2021
+// Date        : Sun Jan 24 14:50:02 2021
 // Host        : DESKTOP-JR running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim d:/lc3_bram/lc3_bram.srcs/sources_1/ip/dual_mem/dual_mem_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top dual_mem -prefix
+//               dual_mem_ dual_mem_sim_netlist.v
 // Design      : dual_mem
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -200,7 +201,6 @@ module dual_mem
         .web(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "bindec" *) 
 module dual_mem_bindec
    (ena_array,
     addra,
@@ -432,7 +432,6 @@ module dual_mem_bindec_0
         .O(enb_array[10]));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_generic_cstr" *) 
 module dual_mem_blk_mem_gen_generic_cstr
    (doutb,
     addra,
@@ -1513,7 +1512,6 @@ module dual_mem_blk_mem_gen_mux__parameterized0
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_width" *) 
 module dual_mem_blk_mem_gen_prim_width
    (ram_doutb,
     clka,
@@ -2330,7 +2328,6 @@ module dual_mem_blk_mem_gen_prim_width__parameterized9
         .enb_array(enb_array));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_prim_wrapper_init" *) 
 module dual_mem_blk_mem_gen_prim_wrapper_init
    (ram_doutb,
     clka,
@@ -5843,7 +5840,7 @@ module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized18
     .INIT_2D(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_2E(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_2F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_30(256'h0000000000000000000000000000000000000000000000000000000000000003),
+    .INIT_30(256'h0000000000000000000000000000000000000000000000000000000000000002),
     .INIT_31(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_32(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_33(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -6718,7 +6715,7 @@ module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized2
     .INITP_0D(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INITP_0E(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INITP_0F(256'h0000000000000000000000000000000000000000000000000000000000000000),
-    .INIT_00(256'h0000000000000000000000000000000000000000000000000000000000FD2120),
+    .INIT_00(256'h0000000000000000000000000000000000000000000000216F6C6C6548FD2202),
     .INIT_01(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_02(256'h0000000000000000000000000000000000000000000000000000000000000000),
     .INIT_03(256'h0000000000000000000000000000000000000000000000000000000000000000),
@@ -9635,7 +9632,6 @@ module dual_mem_blk_mem_gen_prim_wrapper_init__parameterized9
         .WEBWE({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_top" *) 
 module dual_mem_blk_mem_gen_top
    (doutb,
     addra,
@@ -9691,7 +9687,7 @@ endmodule
 (* C_WEA_WIDTH = "1" *) (* C_WEB_WIDTH = "1" *) (* C_WRITE_DEPTH_A = "65535" *) 
 (* C_WRITE_DEPTH_B = "65535" *) (* C_WRITE_MODE_A = "NO_CHANGE" *) (* C_WRITE_MODE_B = "READ_FIRST" *) 
 (* C_WRITE_WIDTH_A = "16" *) (* C_WRITE_WIDTH_B = "16" *) (* C_XDEVICEFAMILY = "artix7" *) 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_4_4" *) (* downgradeipidentifiedwarnings = "yes" *) 
+(* downgradeipidentifiedwarnings = "yes" *) 
 module dual_mem_blk_mem_gen_v8_4_4
    (clka,
     rsta,
@@ -9927,7 +9923,6 @@ module dual_mem_blk_mem_gen_v8_4_4
         .wea(wea));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_4_4_synth" *) 
 module dual_mem_blk_mem_gen_v8_4_4_synth
    (doutb,
     addra,
