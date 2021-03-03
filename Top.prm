@@ -6,9 +6,9 @@ Interface          SPIX4
 Size               128M
 Start Address      0x00000000
 End Address        0x07FFFFFF
-Checksum           0xEFFEC1A8
+Checksum           0xEFAF6482
 Fill Value         0xFF
 
 Addr1         Addr2         Date                    File(s)                                     Checksum
-0x00000000    0x000849B7    Mar  3 14:44:22 2021    D:/lc3_bram/lc3_bram.runs/impl_1/Top.bit    0x00402FF0
-File Checksum Total                                                                             0x00402FF0
+0x00000000    0x0008986B    Mar  3 16:41:16 2021    D:/lc3_bram/lc3_bram.runs/impl_1/Top.bit    0x003F3816
+File Checksum Total                                                                             0x003F3816
