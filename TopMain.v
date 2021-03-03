@@ -727,28 +727,28 @@ module Regfile(
   reg [31:0] _RAND_6;
   reg [31:0] _RAND_7;
 `endif // RANDOMIZE_REG_INIT
-  reg [15:0] regfile_0; // @[Regfile.scala 21:24]
-  reg [15:0] regfile_1; // @[Regfile.scala 21:24]
-  reg [15:0] regfile_2; // @[Regfile.scala 21:24]
-  reg [15:0] regfile_3; // @[Regfile.scala 21:24]
-  reg [15:0] regfile_4; // @[Regfile.scala 21:24]
-  reg [15:0] regfile_5; // @[Regfile.scala 21:24]
-  reg [15:0] regfile_6; // @[Regfile.scala 21:24]
-  reg [15:0] regfile_7; // @[Regfile.scala 21:24]
-  wire [15:0] _GEN_17 = 3'h1 == io_r1Addr ? regfile_1 : regfile_0; // @[Regfile.scala 27:13]
-  wire [15:0] _GEN_18 = 3'h2 == io_r1Addr ? regfile_2 : _GEN_17; // @[Regfile.scala 27:13]
-  wire [15:0] _GEN_19 = 3'h3 == io_r1Addr ? regfile_3 : _GEN_18; // @[Regfile.scala 27:13]
-  wire [15:0] _GEN_20 = 3'h4 == io_r1Addr ? regfile_4 : _GEN_19; // @[Regfile.scala 27:13]
-  wire [15:0] _GEN_21 = 3'h5 == io_r1Addr ? regfile_5 : _GEN_20; // @[Regfile.scala 27:13]
-  wire [15:0] _GEN_22 = 3'h6 == io_r1Addr ? regfile_6 : _GEN_21; // @[Regfile.scala 27:13]
-  wire [15:0] _GEN_25 = 3'h1 == io_r2Addr ? regfile_1 : regfile_0; // @[Regfile.scala 28:13]
-  wire [15:0] _GEN_26 = 3'h2 == io_r2Addr ? regfile_2 : _GEN_25; // @[Regfile.scala 28:13]
-  wire [15:0] _GEN_27 = 3'h3 == io_r2Addr ? regfile_3 : _GEN_26; // @[Regfile.scala 28:13]
-  wire [15:0] _GEN_28 = 3'h4 == io_r2Addr ? regfile_4 : _GEN_27; // @[Regfile.scala 28:13]
-  wire [15:0] _GEN_29 = 3'h5 == io_r2Addr ? regfile_5 : _GEN_28; // @[Regfile.scala 28:13]
-  wire [15:0] _GEN_30 = 3'h6 == io_r2Addr ? regfile_6 : _GEN_29; // @[Regfile.scala 28:13]
-  assign io_r1Data = 3'h7 == io_r1Addr ? regfile_7 : _GEN_22; // @[Regfile.scala 27:13]
-  assign io_r2Data = 3'h7 == io_r2Addr ? regfile_7 : _GEN_30; // @[Regfile.scala 28:13]
+  reg [15:0] regfile_0; // @[Regfile.scala 20:24]
+  reg [15:0] regfile_1; // @[Regfile.scala 20:24]
+  reg [15:0] regfile_2; // @[Regfile.scala 20:24]
+  reg [15:0] regfile_3; // @[Regfile.scala 20:24]
+  reg [15:0] regfile_4; // @[Regfile.scala 20:24]
+  reg [15:0] regfile_5; // @[Regfile.scala 20:24]
+  reg [15:0] regfile_6; // @[Regfile.scala 20:24]
+  reg [15:0] regfile_7; // @[Regfile.scala 20:24]
+  wire [15:0] _GEN_17 = 3'h1 == io_r1Addr ? regfile_1 : regfile_0; // @[Regfile.scala 25:13]
+  wire [15:0] _GEN_18 = 3'h2 == io_r1Addr ? regfile_2 : _GEN_17; // @[Regfile.scala 25:13]
+  wire [15:0] _GEN_19 = 3'h3 == io_r1Addr ? regfile_3 : _GEN_18; // @[Regfile.scala 25:13]
+  wire [15:0] _GEN_20 = 3'h4 == io_r1Addr ? regfile_4 : _GEN_19; // @[Regfile.scala 25:13]
+  wire [15:0] _GEN_21 = 3'h5 == io_r1Addr ? regfile_5 : _GEN_20; // @[Regfile.scala 25:13]
+  wire [15:0] _GEN_22 = 3'h6 == io_r1Addr ? regfile_6 : _GEN_21; // @[Regfile.scala 25:13]
+  wire [15:0] _GEN_25 = 3'h1 == io_r2Addr ? regfile_1 : regfile_0; // @[Regfile.scala 26:13]
+  wire [15:0] _GEN_26 = 3'h2 == io_r2Addr ? regfile_2 : _GEN_25; // @[Regfile.scala 26:13]
+  wire [15:0] _GEN_27 = 3'h3 == io_r2Addr ? regfile_3 : _GEN_26; // @[Regfile.scala 26:13]
+  wire [15:0] _GEN_28 = 3'h4 == io_r2Addr ? regfile_4 : _GEN_27; // @[Regfile.scala 26:13]
+  wire [15:0] _GEN_29 = 3'h5 == io_r2Addr ? regfile_5 : _GEN_28; // @[Regfile.scala 26:13]
+  wire [15:0] _GEN_30 = 3'h6 == io_r2Addr ? regfile_6 : _GEN_29; // @[Regfile.scala 26:13]
+  assign io_r1Data = 3'h7 == io_r1Addr ? regfile_7 : _GEN_22; // @[Regfile.scala 25:13]
+  assign io_r2Data = 3'h7 == io_r2Addr ? regfile_7 : _GEN_30; // @[Regfile.scala 26:13]
 `ifdef RANDOMIZE_GARBAGE_ASSIGN
 `define RANDOMIZE
 `endif
@@ -1039,9 +1039,9 @@ module DataPath(
   wire  _T_3 = PRE_IR != 16'h0; // @[DataPath.scala 70:29]
   wire  _T_4 = _T_2 & _T_3; // @[DataPath.scala 70:19]
   wire  _GEN_2 = _T_4 | END; // @[DataPath.scala 70:38]
-  wire [2:0] baseR = IR[8:6]; // @[DataPath.scala 73:17]
-  wire  isImm = IR[5]; // @[DataPath.scala 75:17]
-  wire [2:0] dst = IR[11:9]; // @[DataPath.scala 76:17]
+  wire [2:0] baseR = IR[8:6]; // @[DataPath.scala 75:17]
+  wire  isImm = IR[5]; // @[DataPath.scala 77:17]
+  wire [2:0] dst = IR[11:9]; // @[DataPath.scala 78:17]
   wire [10:0] _T_8 = IR[4] ? 11'h7ff : 11'h0; // @[Bitwise.scala 72:12]
   wire [15:0] offset5 = {_T_8,IR[4:0]}; // @[Cat.scala 29:58]
   wire [9:0] _T_12 = IR[5] ? 10'h3ff : 10'h0; // @[Bitwise.scala 72:12]
@@ -1051,19 +1051,19 @@ module DataPath(
   wire [4:0] _T_20 = IR[10] ? 5'h1f : 5'h0; // @[Bitwise.scala 72:12]
   wire [15:0] offset11 = {_T_20,IR[10:0]}; // @[Cat.scala 29:58]
   wire [15:0] offset8 = {8'h0,IR[7:0]}; // @[Cat.scala 29:58]
-  wire [15:0] ADDR1MUX = io_signal_ADDR1_MUX ? regfile_io_r1Data : PC; // @[DataPath.scala 88:21]
+  wire [15:0] ADDR1MUX = io_signal_ADDR1_MUX ? regfile_io_r1Data : PC; // @[DataPath.scala 90:21]
   wire  _T_22 = 2'h1 == io_signal_ADDR2_MUX; // @[Mux.scala 80:60]
   wire [15:0] _T_23 = _T_22 ? offset6 : 16'h0; // @[Mux.scala 80:57]
   wire  _T_24 = 2'h2 == io_signal_ADDR2_MUX; // @[Mux.scala 80:60]
   wire [15:0] _T_25 = _T_24 ? offset9 : _T_23; // @[Mux.scala 80:57]
   wire  _T_26 = 2'h3 == io_signal_ADDR2_MUX; // @[Mux.scala 80:60]
   wire [15:0] ADDR2MUX = _T_26 ? offset11 : _T_25; // @[Mux.scala 80:57]
-  wire [15:0] addrOut = ADDR1MUX + ADDR2MUX; // @[DataPath.scala 97:26]
-  wire  _T_28 = PC == 16'h0; // @[DataPath.scala 100:18]
-  wire [15:0] _T_30 = PC + 16'h1; // @[DataPath.scala 100:40]
+  wire [15:0] addrOut = ADDR1MUX + ADDR2MUX; // @[DataPath.scala 99:26]
+  wire  _T_28 = PC == 16'h0; // @[DataPath.scala 102:18]
+  wire [15:0] _T_30 = PC + 16'h1; // @[DataPath.scala 102:40]
   wire  _T_32 = 2'h0 == io_signal_PC_MUX; // @[Mux.scala 80:60]
   wire  _T_34 = 2'h1 == io_signal_PC_MUX; // @[Mux.scala 80:60]
-  wire [15:0] BUSOUT = bus_io_out; // @[DataPath.scala 220:10]
+  wire [15:0] BUSOUT = bus_io_out; // @[DataPath.scala 221:10]
   wire  _T_36 = 2'h2 == io_signal_PC_MUX; // @[Mux.scala 80:60]
   wire  _T_39 = 2'h0 == io_signal_DR_MUX; // @[Mux.scala 80:60]
   wire [2:0] _T_40 = _T_39 ? dst : dst; // @[Mux.scala 80:57]
@@ -1075,56 +1075,55 @@ module DataPath(
   wire  _T_49 = 2'h1 == io_signal_SR1_MUX; // @[Mux.scala 80:60]
   wire [2:0] _T_50 = _T_49 ? baseR : _T_48; // @[Mux.scala 80:57]
   wire  _T_51 = 2'h2 == io_signal_SR1_MUX; // @[Mux.scala 80:60]
-  wire [15:0] _T_53 = regfile_io_r1Data + 16'h1; // @[DataPath.scala 120:54]
-  wire [15:0] _T_57 = regfile_io_r1Data - 16'h1; // @[DataPath.scala 122:30]
+  wire [15:0] _T_53 = regfile_io_r1Data + 16'h1; // @[DataPath.scala 122:54]
+  wire [15:0] _T_57 = regfile_io_r1Data - 16'h1; // @[DataPath.scala 124:30]
   wire  _T_58 = 2'h1 == io_signal_SP_MUX; // @[Mux.scala 80:60]
   wire [15:0] _T_59 = _T_58 ? _T_57 : _T_53; // @[Mux.scala 80:57]
   wire  _T_60 = 2'h2 == io_signal_SP_MUX; // @[Mux.scala 80:60]
   wire [15:0] _T_61 = _T_60 ? 16'h6 : _T_59; // @[Mux.scala 80:57]
   wire  _T_62 = 2'h3 == io_signal_SP_MUX; // @[Mux.scala 80:60]
-  wire  _T_69 = ~io_signal_R_W; // @[DataPath.scala 156:30]
-  wire  MEM_RD = io_signal_MIO_EN & _T_69; // @[DataPath.scala 156:27]
-  wire [15:0] MAR = io_signal_LD_MAR ? BUSOUT : MAR_REG; // @[DataPath.scala 226:20]
-  wire  _T_70 = MAR < 16'hfe00; // @[DataPath.scala 157:35]
-  wire  MEM_EN = io_signal_MIO_EN & _T_70; // @[DataPath.scala 157:27]
-  wire  _T_71 = MAR == 16'hfe00; // @[DataPath.scala 160:21]
-  wire  _T_72 = MEM_RD & _T_71; // @[DataPath.scala 160:13]
-  wire  _T_73 = MAR == 16'hfe02; // @[DataPath.scala 161:21]
-  wire  _T_74 = MEM_RD & _T_73; // @[DataPath.scala 161:13]
-  wire  _T_75 = MAR == 16'hfe04; // @[DataPath.scala 162:21]
-  wire  _T_76 = MEM_RD & _T_75; // @[DataPath.scala 162:13]
+  wire  _T_69 = ~io_signal_R_W; // @[DataPath.scala 158:30]
+  wire  MEM_RD = io_signal_MIO_EN & _T_69; // @[DataPath.scala 158:27]
+  wire [15:0] MAR = io_signal_LD_MAR ? BUSOUT : MAR_REG; // @[DataPath.scala 227:20]
+  wire  _T_70 = MAR < 16'hfe00; // @[DataPath.scala 159:35]
+  wire  MEM_EN = io_signal_MIO_EN & _T_70; // @[DataPath.scala 159:27]
+  wire  _T_71 = MAR == 16'hfe00; // @[DataPath.scala 162:21]
+  wire  _T_72 = MEM_RD & _T_71; // @[DataPath.scala 162:13]
+  wire  _T_73 = MAR == 16'hfe02; // @[DataPath.scala 163:21]
+  wire  _T_74 = MEM_RD & _T_73; // @[DataPath.scala 163:13]
+  wire  _T_75 = MAR == 16'hfe04; // @[DataPath.scala 164:21]
+  wire  _T_76 = MEM_RD & _T_75; // @[DataPath.scala 164:13]
   wire [15:0] _T_80 = _T_76 ? DSR : io_mem_rdata; // @[Mux.scala 98:16]
   wire [15:0] _T_81 = _T_74 ? KBDR : _T_80; // @[Mux.scala 98:16]
   wire [15:0] IN_MUX = _T_72 ? KBSR : _T_81; // @[Mux.scala 98:16]
   wire  _T_85 = io_uartRx_ready & io_uartRx_valid; // @[Decoupled.scala 40:37]
-  wire  _T_87 = ~reset; // @[DataPath.scala 169:11]
-  wire [15:0] _T_88 = {8'h0,io_uartRx_bits}; // @[Cat.scala 29:58]
-  wire  _T_91 = _T_71 & io_signal_MIO_EN; // @[DataPath.scala 174:36]
-  wire  LD_KBSR = _T_91 & io_signal_R_W; // @[DataPath.scala 174:50]
-  wire  _T_93 = _T_75 & io_signal_MIO_EN; // @[DataPath.scala 175:36]
-  wire  LD_DSR = _T_93 & io_signal_R_W; // @[DataPath.scala 175:50]
-  wire  _T_94 = MAR == 16'hfe06; // @[DataPath.scala 176:22]
-  wire  _T_95 = _T_94 & io_signal_MIO_EN; // @[DataPath.scala 176:36]
-  wire  LD_DDR = _T_95 & io_signal_R_W; // @[DataPath.scala 176:50]
-  wire [15:0] _T_96 = {io_uartTx_ready,15'h0}; // @[Cat.scala 29:58]
-  reg  _T_97; // @[DataPath.scala 182:29]
-  wire [3:0] _T_102 = {io_signal_GATE_VECTOR,io_signal_GATE_PC1,io_signal_GATE_PSR,io_signal_GATE_SP}; // @[Cat.scala 29:58]
-  wire [3:0] _T_105 = {io_signal_GATE_PC,io_signal_GATE_MDR,io_signal_GATE_ALU,io_signal_GATE_MARMUX}; // @[Cat.scala 29:58]
-  wire  _T_114 = IR[11] & N; // @[DataPath.scala 236:37]
-  wire  _T_116 = IR[10] & Z; // @[DataPath.scala 236:52]
-  wire  _T_117 = _T_114 | _T_116; // @[DataPath.scala 236:42]
-  wire  _T_119 = IR[9] & P; // @[DataPath.scala 236:66]
-  wire  _T_120 = _T_117 | _T_119; // @[DataPath.scala 236:57]
-  wire  _T_121 = time_ == 64'h0; // @[DataPath.scala 237:26]
-  wire  _T_122 = io_signal_LD_PC | _T_121; // @[DataPath.scala 237:18]
+  wire [15:0] _T_86 = {8'h0,io_uartRx_bits}; // @[Cat.scala 29:58]
+  wire  _T_89 = _T_71 & io_signal_MIO_EN; // @[DataPath.scala 175:36]
+  wire  LD_KBSR = _T_89 & io_signal_R_W; // @[DataPath.scala 175:50]
+  wire  _T_91 = _T_75 & io_signal_MIO_EN; // @[DataPath.scala 176:36]
+  wire  LD_DSR = _T_91 & io_signal_R_W; // @[DataPath.scala 176:50]
+  wire  _T_92 = MAR == 16'hfe06; // @[DataPath.scala 177:22]
+  wire  _T_93 = _T_92 & io_signal_MIO_EN; // @[DataPath.scala 177:36]
+  wire  LD_DDR = _T_93 & io_signal_R_W; // @[DataPath.scala 177:50]
+  wire [15:0] _T_94 = {io_uartTx_ready,15'h0}; // @[Cat.scala 29:58]
+  reg  _T_95; // @[DataPath.scala 183:29]
+  wire [3:0] _T_100 = {io_signal_GATE_VECTOR,io_signal_GATE_PC1,io_signal_GATE_PSR,io_signal_GATE_SP}; // @[Cat.scala 29:58]
+  wire [3:0] _T_103 = {io_signal_GATE_PC,io_signal_GATE_MDR,io_signal_GATE_ALU,io_signal_GATE_MARMUX}; // @[Cat.scala 29:58]
+  wire  _T_112 = IR[11] & N; // @[DataPath.scala 237:37]
+  wire  _T_114 = IR[10] & Z; // @[DataPath.scala 237:52]
+  wire  _T_115 = _T_112 | _T_114; // @[DataPath.scala 237:42]
+  wire  _T_117 = IR[9] & P; // @[DataPath.scala 237:66]
+  wire  _T_118 = _T_115 | _T_117; // @[DataPath.scala 237:57]
+  wire  _T_119 = time_ == 64'h0; // @[DataPath.scala 238:26]
+  wire  _T_120 = io_signal_LD_PC | _T_119; // @[DataPath.scala 238:18]
   wire [15:0] dstData = regfile_io_wData;
-  wire  _T_124 = |dstData; // @[DataPath.scala 245:22]
-  wire  _T_125 = ~_T_124; // @[DataPath.scala 245:10]
-  wire  _T_127 = ~dstData[15]; // @[DataPath.scala 246:10]
-  wire  _T_129 = _T_127 & _T_124; // @[DataPath.scala 246:23]
-  wire  _GEN_11 = io_signal_LD_CC ? _T_125 : Z; // @[DataPath.scala 243:19]
-  wire [15:0] in_mux = IN_MUX; // @[DataPath.scala 185:20 DataPath.scala 187:9]
-  wire [15:0] mem_en = {{15'd0}, MEM_EN}; // @[DataPath.scala 186:20 DataPath.scala 188:10]
+  wire  _T_122 = |dstData; // @[DataPath.scala 246:22]
+  wire  _T_123 = ~_T_122; // @[DataPath.scala 246:10]
+  wire  _T_125 = ~dstData[15]; // @[DataPath.scala 247:10]
+  wire  _T_127 = _T_125 & _T_122; // @[DataPath.scala 247:23]
+  wire  _GEN_11 = io_signal_LD_CC ? _T_123 : Z; // @[DataPath.scala 244:19]
+  wire [15:0] in_mux = IN_MUX; // @[DataPath.scala 186:20 DataPath.scala 188:9]
+  wire [15:0] mem_en = {{15'd0}, MEM_EN}; // @[DataPath.scala 187:20 DataPath.scala 189:10]
   Regfile regfile ( // @[DataPath.scala 32:23]
     .clock(regfile_clock),
     .reset(regfile_reset),
@@ -1152,37 +1151,37 @@ module DataPath(
     .io_GateData_7(bus_io_GateData_7),
     .io_out(bus_io_out)
   );
-  assign io_mem_raddr = io_signal_LD_MAR ? BUSOUT : MAR_REG; // @[DataPath.scala 192:18]
-  assign io_mem_waddr = io_signal_LD_MAR ? BUSOUT : MAR_REG; // @[DataPath.scala 193:18]
-  assign io_mem_wdata = MDR; // @[DataPath.scala 194:17]
-  assign io_mem_wen = io_signal_MIO_EN & io_signal_R_W; // @[DataPath.scala 195:17]
+  assign io_mem_raddr = io_signal_LD_MAR ? BUSOUT : MAR_REG; // @[DataPath.scala 193:18]
+  assign io_mem_waddr = io_signal_LD_MAR ? BUSOUT : MAR_REG; // @[DataPath.scala 194:18]
+  assign io_mem_wdata = MDR; // @[DataPath.scala 195:17]
+  assign io_mem_wen = io_signal_MIO_EN & io_signal_R_W; // @[DataPath.scala 196:17]
   assign io_out_sig = 10'h0;
-  assign io_out_int = 1'h0; // @[DataPath.scala 257:15]
-  assign io_out_r = io_mem_R; // @[DataPath.scala 258:15]
-  assign io_out_ir = IR[15:12]; // @[DataPath.scala 259:15]
-  assign io_out_ben = BEN; // @[DataPath.scala 260:15]
-  assign io_out_psr = 1'h0; // @[DataPath.scala 261:15]
-  assign io_uartRx_ready = ~KBSR[15]; // @[DataPath.scala 167:19]
-  assign io_uartTx_valid = _T_97; // @[DataPath.scala 182:19]
-  assign io_uartTx_bits = DDR[7:0]; // @[DataPath.scala 183:19]
+  assign io_out_int = 1'h0; // @[DataPath.scala 258:15]
+  assign io_out_r = io_mem_R; // @[DataPath.scala 259:15]
+  assign io_out_ir = IR[15:12]; // @[DataPath.scala 260:15]
+  assign io_out_ben = BEN; // @[DataPath.scala 261:15]
+  assign io_out_psr = 1'h0; // @[DataPath.scala 262:15]
+  assign io_uartRx_ready = ~KBSR[15]; // @[DataPath.scala 169:19]
+  assign io_uartTx_valid = _T_95; // @[DataPath.scala 183:19]
+  assign io_uartTx_bits = DDR[7:0]; // @[DataPath.scala 184:19]
   assign io_end = END; // @[DataPath.scala 69:10]
   assign regfile_clock = clock;
   assign regfile_reset = reset;
-  assign regfile_io_wen = io_signal_LD_REG; // @[DataPath.scala 143:21]
-  assign regfile_io_wAddr = _T_43 ? 3'h6 : _T_42; // @[DataPath.scala 144:21]
-  assign regfile_io_r1Addr = _T_51 ? 3'h6 : _T_50; // @[DataPath.scala 145:21]
-  assign regfile_io_r2Addr = IR[2:0]; // @[DataPath.scala 146:21]
-  assign regfile_io_wData = bus_io_out; // @[DataPath.scala 147:21]
-  assign alu_io_ina = regfile_io_r1Data; // @[DataPath.scala 138:14]
-  assign alu_io_inb = isImm ? offset5 : regfile_io_r2Data; // @[DataPath.scala 139:14]
-  assign alu_io_op = io_signal_ALUK; // @[DataPath.scala 140:13]
-  assign bus_io_GateSig = {_T_105,_T_102}; // @[DataPath.scala 201:18]
-  assign bus_io_GateData_0 = PC; // @[DataPath.scala 211:22]
-  assign bus_io_GateData_1 = MDR; // @[DataPath.scala 212:22]
-  assign bus_io_GateData_2 = alu_io_out; // @[DataPath.scala 213:22]
-  assign bus_io_GateData_3 = io_signal_MAR_MUX ? addrOut : offset8; // @[DataPath.scala 214:22]
-  assign bus_io_GateData_5 = PC - 16'h1; // @[DataPath.scala 216:22]
-  assign bus_io_GateData_7 = _T_62 ? 16'h6 : _T_61; // @[DataPath.scala 218:22]
+  assign regfile_io_wen = io_signal_LD_REG; // @[DataPath.scala 145:21]
+  assign regfile_io_wAddr = _T_43 ? 3'h6 : _T_42; // @[DataPath.scala 146:21]
+  assign regfile_io_r1Addr = _T_51 ? 3'h6 : _T_50; // @[DataPath.scala 147:21]
+  assign regfile_io_r2Addr = IR[2:0]; // @[DataPath.scala 148:21]
+  assign regfile_io_wData = bus_io_out; // @[DataPath.scala 149:21]
+  assign alu_io_ina = regfile_io_r1Data; // @[DataPath.scala 140:14]
+  assign alu_io_inb = isImm ? offset5 : regfile_io_r2Data; // @[DataPath.scala 141:14]
+  assign alu_io_op = io_signal_ALUK; // @[DataPath.scala 142:13]
+  assign bus_io_GateSig = {_T_103,_T_100}; // @[DataPath.scala 202:18]
+  assign bus_io_GateData_0 = PC; // @[DataPath.scala 212:22]
+  assign bus_io_GateData_1 = MDR; // @[DataPath.scala 213:22]
+  assign bus_io_GateData_2 = alu_io_out; // @[DataPath.scala 214:22]
+  assign bus_io_GateData_3 = io_signal_MAR_MUX ? addrOut : offset8; // @[DataPath.scala 215:22]
+  assign bus_io_GateData_5 = PC - 16'h1; // @[DataPath.scala 217:22]
+  assign bus_io_GateData_7 = _T_62 ? 16'h6 : _T_61; // @[DataPath.scala 219:22]
 `ifdef RANDOMIZE_GARBAGE_ASSIGN
 `define RANDOMIZE
 `endif
@@ -1251,7 +1250,7 @@ initial begin
   _RAND_15 = {1{`RANDOM}};
   END = _RAND_15[0:0];
   _RAND_16 = {1{`RANDOM}};
-  _T_97 = _RAND_16[0:0];
+  _T_95 = _RAND_16[0:0];
 `endif // RANDOMIZE_REG_INIT
   `endif // RANDOMIZE
 end // initial
@@ -1268,7 +1267,7 @@ end // initial
     if (reset) begin
       BEN <= 1'h0;
     end else if (io_signal_LD_BEN) begin
-      BEN <= _T_120;
+      BEN <= _T_118;
     end
     if (reset) begin
       N <= 1'h0;
@@ -1278,12 +1277,12 @@ end // initial
     if (reset) begin
       P <= 1'h0;
     end else if (io_signal_LD_CC) begin
-      P <= _T_129;
+      P <= _T_127;
     end
     Z <= reset | _GEN_11;
     if (reset) begin
       PC <= 16'h3000;
-    end else if (_T_122) begin
+    end else if (_T_120) begin
       if (_T_36) begin
         PC <= addrOut;
       end else if (_T_34) begin
@@ -1335,7 +1334,7 @@ end // initial
     if (reset) begin
       KBDR <= 16'h0;
     end else if (_T_85) begin
-      KBDR <= _T_88;
+      KBDR <= _T_86;
     end
     if (reset) begin
       KBSR <= 16'h0;
@@ -1354,7 +1353,7 @@ end // initial
     end else if (LD_DSR) begin
       DSR <= MDR;
     end else begin
-      DSR <= _T_96;
+      DSR <= _T_94;
     end
     PRE_IR <= IR;
     if (reset) begin
@@ -1362,18 +1361,7 @@ end // initial
     end else begin
       END <= _GEN_2;
     end
-    _T_97 <= _T_95 & io_signal_R_W;
-    `ifndef SYNTHESIS
-    `ifdef PRINTF_COND
-      if (`PRINTF_COND) begin
-    `endif
-        if (_T_85 & _T_87) begin
-          $fwrite(32'h80000002,"Send: %d\n",io_uartRx_bits); // @[DataPath.scala 169:11]
-        end
-    `ifdef PRINTF_COND
-      end
-    `endif
-    `endif // SYNTHESIS
+    _T_95 <= _T_93 & io_signal_R_W;
   end
 endmodule
 module Memory(
@@ -1385,14 +1373,14 @@ module Memory(
   input         io_wen,
   output        io_R
 );
-  wire  dual_mem_clka; // @[Memory.scala 50:21]
-  wire  dual_mem_wea; // @[Memory.scala 50:21]
-  wire [15:0] dual_mem_addra; // @[Memory.scala 50:21]
-  wire [15:0] dual_mem_dina; // @[Memory.scala 50:21]
-  wire  dual_mem_clkb; // @[Memory.scala 50:21]
-  wire [15:0] dual_mem_addrb; // @[Memory.scala 50:21]
-  wire [15:0] dual_mem_doutb; // @[Memory.scala 50:21]
-  dual_mem dual_mem ( // @[Memory.scala 50:21]
+  wire  dual_mem_clka; // @[Memory.scala 45:21]
+  wire  dual_mem_wea; // @[Memory.scala 45:21]
+  wire [15:0] dual_mem_addra; // @[Memory.scala 45:21]
+  wire [15:0] dual_mem_dina; // @[Memory.scala 45:21]
+  wire  dual_mem_clkb; // @[Memory.scala 45:21]
+  wire [15:0] dual_mem_addrb; // @[Memory.scala 45:21]
+  wire [15:0] dual_mem_doutb; // @[Memory.scala 45:21]
+  dual_mem dual_mem ( // @[Memory.scala 45:21]
     .clka(dual_mem_clka),
     .wea(dual_mem_wea),
     .addra(dual_mem_addra),
@@ -1401,14 +1389,14 @@ module Memory(
     .addrb(dual_mem_addrb),
     .doutb(dual_mem_doutb)
   );
-  assign io_rdata = dual_mem_doutb; // @[Memory.scala 57:19]
-  assign io_R = 1'h1; // @[Memory.scala 76:8]
-  assign dual_mem_clka = clock; // @[Memory.scala 51:19]
-  assign dual_mem_wea = io_wen; // @[Memory.scala 52:19]
-  assign dual_mem_addra = io_waddr; // @[Memory.scala 53:19]
-  assign dual_mem_dina = io_wdata; // @[Memory.scala 54:19]
-  assign dual_mem_clkb = clock; // @[Memory.scala 55:19]
-  assign dual_mem_addrb = io_raddr; // @[Memory.scala 56:19]
+  assign io_rdata = dual_mem_doutb; // @[Memory.scala 52:19]
+  assign io_R = 1'h1; // @[Memory.scala 63:8]
+  assign dual_mem_clka = clock; // @[Memory.scala 46:19]
+  assign dual_mem_wea = io_wen; // @[Memory.scala 47:19]
+  assign dual_mem_addra = io_waddr; // @[Memory.scala 48:19]
+  assign dual_mem_dina = io_wdata; // @[Memory.scala 49:19]
+  assign dual_mem_clkb = clock; // @[Memory.scala 50:19]
+  assign dual_mem_addrb = io_raddr; // @[Memory.scala 51:19]
 endmodule
 module UartRX(
   input        clock,
@@ -2064,60 +2052,60 @@ module Top(
   assign boot_io_initMem_R = 1'h0;
   assign controller_clock = clock;
   assign controller_reset = reset;
-  assign controller_io_in_sig = dataPath_io_out_sig; // @[Top.scala 71:20]
-  assign controller_io_in_int = dataPath_io_out_int; // @[Top.scala 71:20]
-  assign controller_io_in_r = dataPath_io_out_r; // @[Top.scala 71:20]
-  assign controller_io_in_ir = dataPath_io_out_ir; // @[Top.scala 71:20]
-  assign controller_io_in_ben = dataPath_io_out_ben; // @[Top.scala 71:20]
-  assign controller_io_in_psr = dataPath_io_out_psr; // @[Top.scala 71:20]
-  assign controller_io_work = boot_io_work; // @[Top.scala 72:22]
+  assign controller_io_in_sig = dataPath_io_out_sig; // @[Top.scala 69:20]
+  assign controller_io_in_int = dataPath_io_out_int; // @[Top.scala 69:20]
+  assign controller_io_in_r = dataPath_io_out_r; // @[Top.scala 69:20]
+  assign controller_io_in_ir = dataPath_io_out_ir; // @[Top.scala 69:20]
+  assign controller_io_in_ben = dataPath_io_out_ben; // @[Top.scala 69:20]
+  assign controller_io_in_psr = dataPath_io_out_psr; // @[Top.scala 69:20]
+  assign controller_io_work = boot_io_work; // @[Top.scala 70:22]
   assign controller_io_end = dataPath_io_end; // @[Top.scala 38:23]
   assign dataPath_clock = clock;
   assign dataPath_reset = reset;
-  assign dataPath_io_signal_LD_MAR = controller_io_out_LD_MAR; // @[Top.scala 74:22]
-  assign dataPath_io_signal_LD_MDR = controller_io_out_LD_MDR; // @[Top.scala 74:22]
-  assign dataPath_io_signal_LD_IR = controller_io_out_LD_IR; // @[Top.scala 74:22]
-  assign dataPath_io_signal_LD_BEN = controller_io_out_LD_BEN; // @[Top.scala 74:22]
-  assign dataPath_io_signal_LD_REG = controller_io_out_LD_REG; // @[Top.scala 74:22]
-  assign dataPath_io_signal_LD_CC = controller_io_out_LD_CC; // @[Top.scala 74:22]
-  assign dataPath_io_signal_LD_PC = controller_io_out_LD_PC; // @[Top.scala 74:22]
-  assign dataPath_io_signal_LD_PRIV = controller_io_out_LD_PRIV; // @[Top.scala 74:22]
-  assign dataPath_io_signal_LD_SAVEDSSP = controller_io_out_LD_SAVEDSSP; // @[Top.scala 74:22]
-  assign dataPath_io_signal_LD_SAVEDUSP = controller_io_out_LD_SAVEDUSP; // @[Top.scala 74:22]
-  assign dataPath_io_signal_LD_VECTOR = controller_io_out_LD_VECTOR; // @[Top.scala 74:22]
-  assign dataPath_io_signal_GATE_PC = controller_io_out_GATE_PC; // @[Top.scala 74:22]
-  assign dataPath_io_signal_GATE_MDR = controller_io_out_GATE_MDR; // @[Top.scala 74:22]
-  assign dataPath_io_signal_GATE_ALU = controller_io_out_GATE_ALU; // @[Top.scala 74:22]
-  assign dataPath_io_signal_GATE_MARMUX = controller_io_out_GATE_MARMUX; // @[Top.scala 74:22]
-  assign dataPath_io_signal_GATE_VECTOR = controller_io_out_GATE_VECTOR; // @[Top.scala 74:22]
-  assign dataPath_io_signal_GATE_PC1 = controller_io_out_GATE_PC1; // @[Top.scala 74:22]
-  assign dataPath_io_signal_GATE_PSR = controller_io_out_GATE_PSR; // @[Top.scala 74:22]
-  assign dataPath_io_signal_GATE_SP = controller_io_out_GATE_SP; // @[Top.scala 74:22]
-  assign dataPath_io_signal_PC_MUX = controller_io_out_PC_MUX; // @[Top.scala 74:22]
-  assign dataPath_io_signal_DR_MUX = controller_io_out_DR_MUX; // @[Top.scala 74:22]
-  assign dataPath_io_signal_SR1_MUX = controller_io_out_SR1_MUX; // @[Top.scala 74:22]
-  assign dataPath_io_signal_ADDR1_MUX = controller_io_out_ADDR1_MUX; // @[Top.scala 74:22]
-  assign dataPath_io_signal_ADDR2_MUX = controller_io_out_ADDR2_MUX; // @[Top.scala 74:22]
-  assign dataPath_io_signal_SP_MUX = controller_io_out_SP_MUX; // @[Top.scala 74:22]
-  assign dataPath_io_signal_MAR_MUX = controller_io_out_MAR_MUX; // @[Top.scala 74:22]
-  assign dataPath_io_signal_VECTOR_MUX = controller_io_out_VECTOR_MUX; // @[Top.scala 74:22]
-  assign dataPath_io_signal_PSR_MUX = controller_io_out_PSR_MUX; // @[Top.scala 74:22]
-  assign dataPath_io_signal_ALUK = controller_io_out_ALUK; // @[Top.scala 74:22]
-  assign dataPath_io_signal_MIO_EN = controller_io_out_MIO_EN; // @[Top.scala 74:22]
-  assign dataPath_io_signal_R_W = controller_io_out_R_W; // @[Top.scala 74:22]
-  assign dataPath_io_signal_SET_PRIV = controller_io_out_SET_PRIV; // @[Top.scala 74:22]
-  assign dataPath_io_mem_rdata = memory_io_rdata; // @[Top.scala 77:13]
-  assign dataPath_io_mem_R = memory_io_R; // @[Top.scala 77:13]
-  assign dataPath_io_initPC_valid = boot_io_initPC_valid; // @[Top.scala 75:22]
-  assign dataPath_io_initPC_bits = boot_io_initPC_bits; // @[Top.scala 75:22]
+  assign dataPath_io_signal_LD_MAR = controller_io_out_LD_MAR; // @[Top.scala 72:22]
+  assign dataPath_io_signal_LD_MDR = controller_io_out_LD_MDR; // @[Top.scala 72:22]
+  assign dataPath_io_signal_LD_IR = controller_io_out_LD_IR; // @[Top.scala 72:22]
+  assign dataPath_io_signal_LD_BEN = controller_io_out_LD_BEN; // @[Top.scala 72:22]
+  assign dataPath_io_signal_LD_REG = controller_io_out_LD_REG; // @[Top.scala 72:22]
+  assign dataPath_io_signal_LD_CC = controller_io_out_LD_CC; // @[Top.scala 72:22]
+  assign dataPath_io_signal_LD_PC = controller_io_out_LD_PC; // @[Top.scala 72:22]
+  assign dataPath_io_signal_LD_PRIV = controller_io_out_LD_PRIV; // @[Top.scala 72:22]
+  assign dataPath_io_signal_LD_SAVEDSSP = controller_io_out_LD_SAVEDSSP; // @[Top.scala 72:22]
+  assign dataPath_io_signal_LD_SAVEDUSP = controller_io_out_LD_SAVEDUSP; // @[Top.scala 72:22]
+  assign dataPath_io_signal_LD_VECTOR = controller_io_out_LD_VECTOR; // @[Top.scala 72:22]
+  assign dataPath_io_signal_GATE_PC = controller_io_out_GATE_PC; // @[Top.scala 72:22]
+  assign dataPath_io_signal_GATE_MDR = controller_io_out_GATE_MDR; // @[Top.scala 72:22]
+  assign dataPath_io_signal_GATE_ALU = controller_io_out_GATE_ALU; // @[Top.scala 72:22]
+  assign dataPath_io_signal_GATE_MARMUX = controller_io_out_GATE_MARMUX; // @[Top.scala 72:22]
+  assign dataPath_io_signal_GATE_VECTOR = controller_io_out_GATE_VECTOR; // @[Top.scala 72:22]
+  assign dataPath_io_signal_GATE_PC1 = controller_io_out_GATE_PC1; // @[Top.scala 72:22]
+  assign dataPath_io_signal_GATE_PSR = controller_io_out_GATE_PSR; // @[Top.scala 72:22]
+  assign dataPath_io_signal_GATE_SP = controller_io_out_GATE_SP; // @[Top.scala 72:22]
+  assign dataPath_io_signal_PC_MUX = controller_io_out_PC_MUX; // @[Top.scala 72:22]
+  assign dataPath_io_signal_DR_MUX = controller_io_out_DR_MUX; // @[Top.scala 72:22]
+  assign dataPath_io_signal_SR1_MUX = controller_io_out_SR1_MUX; // @[Top.scala 72:22]
+  assign dataPath_io_signal_ADDR1_MUX = controller_io_out_ADDR1_MUX; // @[Top.scala 72:22]
+  assign dataPath_io_signal_ADDR2_MUX = controller_io_out_ADDR2_MUX; // @[Top.scala 72:22]
+  assign dataPath_io_signal_SP_MUX = controller_io_out_SP_MUX; // @[Top.scala 72:22]
+  assign dataPath_io_signal_MAR_MUX = controller_io_out_MAR_MUX; // @[Top.scala 72:22]
+  assign dataPath_io_signal_VECTOR_MUX = controller_io_out_VECTOR_MUX; // @[Top.scala 72:22]
+  assign dataPath_io_signal_PSR_MUX = controller_io_out_PSR_MUX; // @[Top.scala 72:22]
+  assign dataPath_io_signal_ALUK = controller_io_out_ALUK; // @[Top.scala 72:22]
+  assign dataPath_io_signal_MIO_EN = controller_io_out_MIO_EN; // @[Top.scala 72:22]
+  assign dataPath_io_signal_R_W = controller_io_out_R_W; // @[Top.scala 72:22]
+  assign dataPath_io_signal_SET_PRIV = controller_io_out_SET_PRIV; // @[Top.scala 72:22]
+  assign dataPath_io_mem_rdata = memory_io_rdata; // @[Top.scala 75:13]
+  assign dataPath_io_mem_R = memory_io_R; // @[Top.scala 75:13]
+  assign dataPath_io_initPC_valid = boot_io_initPC_valid; // @[Top.scala 73:22]
+  assign dataPath_io_initPC_bits = boot_io_initPC_bits; // @[Top.scala 73:22]
   assign dataPath_io_uartRx_valid = boot_io_work & UartRX_io_channel_valid; // @[Top.scala 28:26 Top.scala 33:32]
   assign dataPath_io_uartRx_bits = UartRX_io_channel_bits; // @[Top.scala 28:26]
   assign dataPath_io_uartTx_ready = BufferedUartTX_io_channel_ready; // @[Top.scala 37:23]
   assign memory_clock = clock;
-  assign memory_io_raddr = dataPath_io_mem_raddr; // @[Top.scala 77:13]
-  assign memory_io_waddr = boot_io_work ? dataPath_io_mem_waddr : boot_io_initMem_waddr; // @[Top.scala 77:13 Top.scala 78:19]
-  assign memory_io_wdata = boot_io_work ? dataPath_io_mem_wdata : boot_io_initMem_wdata; // @[Top.scala 77:13 Top.scala 79:19]
-  assign memory_io_wen = boot_io_work ? dataPath_io_mem_wen : boot_io_initMem_wen; // @[Top.scala 77:13 Top.scala 80:17]
+  assign memory_io_raddr = dataPath_io_mem_raddr; // @[Top.scala 75:13]
+  assign memory_io_waddr = boot_io_work ? dataPath_io_mem_waddr : boot_io_initMem_waddr; // @[Top.scala 75:13 Top.scala 76:19]
+  assign memory_io_wdata = boot_io_work ? dataPath_io_mem_wdata : boot_io_initMem_wdata; // @[Top.scala 75:13 Top.scala 77:19]
+  assign memory_io_wen = boot_io_work ? dataPath_io_mem_wen : boot_io_initMem_wen; // @[Top.scala 75:13 Top.scala 78:17]
   assign UartRX_clock = clock;
   assign UartRX_reset = reset;
   assign UartRX_io_rxd = io_uart_rxd; // @[Top.scala 24:19]

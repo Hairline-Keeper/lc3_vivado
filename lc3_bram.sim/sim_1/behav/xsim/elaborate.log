@@ -1,0 +1,31 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto fde90a67d97c4bf59326d0b5c75ffd24 --incr --debug typical --relax --mt 2 -L blk_mem_gen_v8_4_4 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot test_behav xil_defaultlib.test xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.Boot
+Compiling module xil_defaultlib.ctrlSigRom
+Compiling module xil_defaultlib.Controller
+Compiling module xil_defaultlib.Regfile
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.SimpleBus
+Compiling module xil_defaultlib.DataPath
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="art...
+Compiling module xil_defaultlib.dual_mem
+Compiling module xil_defaultlib.Memory
+Compiling module xil_defaultlib.UartRX
+Compiling module xil_defaultlib.UartTX
+Compiling module xil_defaultlib.Buffer
+Compiling module xil_defaultlib.BufferedUartTX
+Compiling module xil_defaultlib.Top
+Compiling module xil_defaultlib.test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot test_behav

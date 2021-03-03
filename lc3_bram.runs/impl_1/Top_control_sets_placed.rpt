@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-| Date         : Wed Mar  3 13:27:27 2021
+| Date         : Wed Mar  3 14:43:48 2021
 | Host         : DESKTOP-JR running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file Top_control_sets_placed.rpt
 | Design       : Top
@@ -73,12 +73,12 @@ Table of Contents
 +------------------+---------------------------------------+--------------------------------------+------------------+----------------+--------------+
 |   Clock Signal   |             Enable Signal             |           Set/Reset Signal           | Slice Load Count | Bel Load Count | Bels / Slice |
 +------------------+---------------------------------------+--------------------------------------+------------------+----------------+--------------+
-|  clock_IBUF_BUFG | dataPath/_T_97_reg_0[0]               | reset_IBUF                           |                2 |              8 |         4.00 |
-|  clock_IBUF_BUFG | UartRX/cntReg[9]_i_1_n_0              |                                      |                3 |              8 |         2.67 |
-|  clock_IBUF_BUFG | UartRX/valReg                         | reset_IBUF                           |                2 |              8 |         4.00 |
 |  clock_IBUF_BUFG | controller/E[0]                       | reset_IBUF                           |                3 |              8 |         2.67 |
 |  clock_IBUF_BUFG | boot/boot_io_uartRx_valid             |                                      |                3 |              8 |         2.67 |
 |  clock_IBUF_BUFG | boot/KBSR_reg[15][0]                  | reset_IBUF                           |                3 |              8 |         2.67 |
+|  clock_IBUF_BUFG | dataPath/_T_95_reg_0[0]               | reset_IBUF                           |                2 |              8 |         4.00 |
+|  clock_IBUF_BUFG | UartRX/cntReg[9]_i_1_n_0              |                                      |                3 |              8 |         2.67 |
+|  clock_IBUF_BUFG | UartRX/valReg                         | reset_IBUF                           |                2 |              8 |         4.00 |
 |  clock_IBUF_BUFG | BufferedUartTX/tx/shiftReg[8]_i_1_n_0 |                                      |                3 |              9 |         3.00 |
 |  clock_IBUF_BUFG | UartRX/cntReg[9]_i_1_n_0              | UartRX/cntReg[19]_i_1__0_n_0         |                5 |             12 |         2.40 |
 |  clock_IBUF_BUFG |                                       | boot/outTimeCnt[0]_i_1_n_0           |                4 |             13 |         3.25 |
@@ -87,17 +87,17 @@ Table of Contents
 |  clock_IBUF_BUFG | controller/state_reg[0]_2[0]          | boot/SR[0]                           |                7 |             15 |         2.14 |
 |  clock_IBUF_BUFG | controller/state_reg[1]_2[0]          | reset_IBUF                           |                6 |             16 |         2.67 |
 |  clock_IBUF_BUFG | controller/state_reg[5]_2[0]          | reset_IBUF                           |               12 |             16 |         1.33 |
+|  clock_IBUF_BUFG | dataPath/regfile/regfile_3_5          | reset_IBUF                           |                7 |             16 |         2.29 |
+|  clock_IBUF_BUFG | dataPath/regfile/regfile_0_0          | reset_IBUF                           |                5 |             16 |         3.20 |
+|  clock_IBUF_BUFG | dataPath/regfile/regfile_2_4          | reset_IBUF                           |                7 |             16 |         2.29 |
+|  clock_IBUF_BUFG | dataPath/regfile/regfile_1_1          | reset_IBUF                           |                3 |             16 |         5.33 |
+|  clock_IBUF_BUFG | dataPath/regfile/regfile_6_6          | reset_IBUF                           |               10 |             16 |         1.60 |
+|  clock_IBUF_BUFG | dataPath/regfile/regfile_7_7          | reset_IBUF                           |                5 |             16 |         3.20 |
+|  clock_IBUF_BUFG | dataPath/regfile/regfile_5_3          | reset_IBUF                           |                7 |             16 |         2.29 |
+|  clock_IBUF_BUFG | dataPath/regfile/regfile_4_2          | reset_IBUF                           |                8 |             16 |         2.00 |
 |  clock_IBUF_BUFG | boot/memAddr[0]_i_1_n_0               |                                      |                4 |             16 |         4.00 |
 |  clock_IBUF_BUFG | boot/second_reg_0[0]                  | reset_IBUF                           |                5 |             16 |         3.20 |
 |  clock_IBUF_BUFG | boot/valReg_reg[0]                    | reset_IBUF                           |                9 |             16 |         1.78 |
-|  clock_IBUF_BUFG | dataPath/regfile/regfile_0_0          | reset_IBUF                           |                5 |             16 |         3.20 |
-|  clock_IBUF_BUFG | dataPath/regfile/regfile_1_1          | reset_IBUF                           |                3 |             16 |         5.33 |
-|  clock_IBUF_BUFG | dataPath/regfile/regfile_6_6          | reset_IBUF                           |               10 |             16 |         1.60 |
-|  clock_IBUF_BUFG | dataPath/regfile/regfile_5_3          | reset_IBUF                           |                7 |             16 |         2.29 |
-|  clock_IBUF_BUFG | dataPath/regfile/regfile_4_2          | reset_IBUF                           |                8 |             16 |         2.00 |
-|  clock_IBUF_BUFG | dataPath/regfile/regfile_7_7          | reset_IBUF                           |                5 |             16 |         3.20 |
-|  clock_IBUF_BUFG | dataPath/regfile/regfile_3_5          | reset_IBUF                           |                7 |             16 |         2.29 |
-|  clock_IBUF_BUFG | dataPath/regfile/regfile_2_4          | reset_IBUF                           |                7 |             16 |         2.29 |
 |  clock_IBUF_BUFG |                                       |                                      |               17 |             33 |         1.94 |
 |  clock_IBUF_BUFG |                                       | reset_IBUF                           |               36 |            102 |         2.83 |
 +------------------+---------------------------------------+--------------------------------------+------------------+----------------+--------------+
